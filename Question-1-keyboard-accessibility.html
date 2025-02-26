@@ -131,3 +131,51 @@
         <p>
           GRAND RAPIDS, MI—Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
           <a href="#">Read More</a>
+        </p>
+      </div>
+    </article>
+
+    <div class="side-by-side">
+      <div class="column">
+        <div class="tier-header">
+          <h2>In the news</h2>
+        </div>
+        <article>
+          <h3 class="headline">Bee wonders if maybe everyone else is a drone.</h3>
+          <p><a href="#"><b>Read More</b></a></p>
+          <img src="https://github.com/udacity/ud891/blob/gh-pages/lesson2-focus/02-dom-order/images/bee.jpg?raw=true" alt="A bee on a flower">
+        </article>
+      </div>
+      <div class="column">
+        <article>
+          <img src="https://github.com/udacity/ud891/blob/gh-pages/lesson2-focus/02-dom-order/images/telephone.jpg?raw=true" alt="A red, London telephone booth">
+          <div class="info">
+            <h3 class="headline">Telephone booths. How is this still a thing?</h3>
+            <p><a href="#">Read More</a></p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="three-col">
+      <div class="tier-header">
+        <h2>Recommended</h2>
+      </div>
+      <div class="columns">
+        <article>
+          <img src="https://github.com/udacity/ud891/blob/gh-pages/lesson2-focus/02-dom-order/images/dog.jpg?raw=true" alt="A dog at a desk">
+          <h3 class="headline">Turn man's best friend into man's best personal assistant. <a href="#">Read More</a></h3>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      document.getElementById('newsletter-status').textContent = 'Thank you for signing up!';
+    });
+  </script>
+
+</body>
+</html>
